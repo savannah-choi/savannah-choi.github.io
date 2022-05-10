@@ -1,3 +1,9 @@
+window.onload = function () {
+    document.getElementById('chara1-label').innerText = (document.getElementById('chara1-name').value) + ": ";
+    document.getElementById('chara2-label').innerText = (document.getElementById('chara2-name').value) + ": ";
+    document.getElementById('chara3-label').innerText = (document.getElementById('chara3-name').value) + ": ";
+}
+
 function getDiceForm () {
     var name1 = document.getElementById('chara1-name').value;
     var name2 = document.getElementById('chara2-name').value;
@@ -22,7 +28,7 @@ function getDiceForm () {
     str += ((res1+res2+1) + "~" + (res1+res2+res3) + " : " + name3 + "(" + (res3) + ")" + "<br/>");
     str += ((res1+res2+res3+1) + "~" + maxnum + " : +1" + "(" + (maxnum-res1-res2-res3) + ")");
     str += "<br/><br/>";
-    str += ("\`주사위 " + maxnum + "\`");
+    str += ("\`주사위 " + maxnum + "\`<br/>\`highlight\`");
     
     document.getElementById('result').innerHTML = str;
 }

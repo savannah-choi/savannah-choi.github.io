@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .main {
+            font-size: 20px;
+            width: 65%;
+        }
+        input {
+            width: 30%;
+            height: 30px;
+            margin: 5px;
+        }
+        button {
+            font-size: 15px;
+            width: 40%;
+            height: 30px;
+        }
+    </style>
     <script src="main.js"></script>
 </head>
 <body>
-    <input name="chara1-name" type="text" maxlength="512" id="chara1-name" value="백"/>
-    <input name="chara2-name" type="text" maxlength="512" id="chara2-name" value="현"/>
-    <input name="chara3-name" type="text" maxlength="512" id="chara3-name" value="숙"/>
-    <br/><br/><hr/>
+    <div class="main">
+        이름1: <input name="chara1-name" type="text" maxlength="512" id="chara1-name" value="백"/><br/>
+        이름2: <input name="chara2-name" type="text" maxlength="512" id="chara2-name" value="현"/><br/>
+        이름3: <input name="chara3-name" type="text" maxlength="512" id="chara3-name" value="숙"/><br/>
+        <hr/>
 
-    <input name="kindness" type="text" maxlength="512" id="kindness"/>
-    <br/><br/><hr/>
-    
-    <input name="chara1-fav" type="text" maxlength="512" id="chara1-fav"/>
-    <input name="chara2-fav" type="text" maxlength="512" id="chara2-fav"/>
-    <input name="chara3-fav" type="text" maxlength="512" id="chara3-fav"/>
-    <br/><br/><hr/>
-    
-    <button type="button" onclick="getDiceForm()">Get dice form</button>
-    <br/><br/><hr/>
-    <div id="result">Result</div>
+        황제의 다정함: <input name="kindness" type="text" maxlength="512" id="kindness"/>
+        <hr/>
+        
+        <span id="chara1-label"></span>
+        <input name="chara1-fav" type="text" maxlength="512" id="chara1-fav"/><br/>
+        <span id="chara2-label"></span>
+        <input name="chara2-fav" type="text" maxlength="512" id="chara2-fav"/><br/>
+        <span id="chara3-label"></span>
+        <input name="chara3-fav" type="text" maxlength="512" id="chara3-fav"/><br/>
+        <hr/>
+        
+        <button type="button" onclick="getDiceForm()">Get dice form</button>
+        <hr/>
+        <div id="result">Result</div>
+    </div>
 </body>
 </html> 
