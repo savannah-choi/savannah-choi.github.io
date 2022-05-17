@@ -31,7 +31,7 @@ function getDiceForm () {
     str += ("\`d20 2d" + maxnum + "\`<br/>\`highlight\`");
     
     document.getElementById('result').innerHTML = str;
-    setLabel();ss
+    setLabel();
 }
 window.onload = function () {
     setLabel();
