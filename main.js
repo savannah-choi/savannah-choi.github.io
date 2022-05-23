@@ -15,9 +15,9 @@ function getDiceForm () {
     var kindness = parseInt(document.getElementById('kindness').value);
     var multinum = ((-1)*kindness + 100) * 0.001;
 
-    var res1 = Math.ceil(30 + (multinum * favor1));
-    var res2 = Math.ceil(30 + (multinum * favor2));
-    var res3 = Math.ceil(30 + (multinum * favor3));
+    var res1 = Math.ceil(20 + (multinum * favor1));
+    var res2 = Math.ceil(20 + (multinum * favor2));
+    var res3 = Math.ceil(20 + (multinum * favor3));
 
     var sum = res1+res2+res3;
     var maxnum = sum + Math.ceil(sum * 0.1) + 1;
