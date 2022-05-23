@@ -28,7 +28,7 @@ function getDiceForm () {
     str += ((res1+res2+1) + "~" + (res1+res2+res3) + " : " + name3 + "(" + (res3) + ")" + "<br/>");
     str += ((res1+res2+res3+1) + "~" + maxnum + " : +1" + "(" + (maxnum-sum) + ")");
     str += "<br/><br/>";
-    str += ("\`d20 2d" + maxnum + "\`<br/>\`highlight\`");
+    str += ("\`주사위 " + maxnum + "\`<br/>\`highlight\`");
     
     document.getElementById('result').innerHTML = str;
     setLabel();
